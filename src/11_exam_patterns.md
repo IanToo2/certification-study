@@ -2,6 +2,22 @@
 
 이 장은 SAA-C03 문제를 읽는 방법을 정리한다. 실제 시험에서는 서비스 정의를 외우는 것보다 요구사항 문장을 빠르게 분해하는 능력이 점수에 직접 연결된다.
 
+<div class="chapter-overview">
+  <h2>이 장에서 바로 확인할 수 있는 시험 패턴</h2>
+  <p>문제 해석 순서, 키워드, 함정, 암기 조합, 마지막 체크리스트를 시험 직전 관점으로 빠르게 점프할 수 있다.</p>
+  <div class="chapter-overview-links">
+    <a href="#exam-read-order">문제 읽는 순서</a>
+    <a href="#exam-keywords">자주 나오는 키워드</a>
+    <a href="#exam-search-patterns">검색 패턴</a>
+    <a href="#exam-common-patterns">대표 출제 패턴</a>
+    <a href="#exam-traps">시험 함정 유형</a>
+    <a href="#exam-service-combos">서비스 조합 암기</a>
+    <a href="#exam-last-checklist">마지막 체크리스트</a>
+    <a href="#exam-tips">실전 풀이 팁</a>
+  </div>
+</div>
+
+<a id="exam-read-order"></a>
 ## 1. 문제를 읽는 순서
 
 1. 무엇을 최우선으로 요구하는지 확인한다.
@@ -9,6 +25,7 @@
 3. 오답 선택지가 어떤 조건에서 탈락하는지 본다.
 4. 마지막에 정답 서비스를 고른다.
 
+<a id="exam-keywords"></a>
 ## 2. 자주 나오는 키워드와 해석
 
 | 문제 키워드 | 우선 떠올릴 것 |
@@ -25,6 +42,7 @@
 | 최종 사용자 인증 | Cognito |
 | 최소 권한 | IAM Role, 세분화 정책 |
 
+<a id="exam-search-patterns"></a>
 ## 3. 검색으로 바로 찾는 문제 패턴
 
 | 검색 표현 | 바로 연결할 서비스/장 |
@@ -40,6 +58,7 @@
 | 읽기 확장 | `Read Replica`, `Amazon ElastiCache` |
 | 공용 인터넷 없이 AWS 서비스 접근 | `VPC Endpoint` |
 
+<a id="exam-common-patterns"></a>
 ## 4. 대표 출제 패턴
 
 ### 패턴 A. "운영 부담을 가장 줄여라"
@@ -75,6 +94,7 @@
 - 초저지연 키-값: `DynamoDB`
 - 고성능 네트워크: `Placement Group`, `NLB`
 
+<a id="exam-traps"></a>
 ## 5. 시험 함정 유형
 
 ### 함정 1. 비슷하지만 목적이 다른 서비스
@@ -100,6 +120,7 @@
 - 읽기 확장은 가용성과 다르다.
 - 캐시는 영속 저장소 대체제가 아니다.
 
+<a id="exam-service-combos"></a>
 ## 6. 서비스 조합 패턴 암기
 
 - 정적 웹사이트: `S3 + CloudFront + Route 53`
@@ -115,6 +136,7 @@
 - 한 서비스가 가능한지보다, 다른 서비스보다 더 적합한지 따져야 한다.
 - 정답은 보통 관리 부담, 비용, 고가용성을 가장 균형 있게 만족한다.
 
+<a id="exam-last-checklist"></a>
 ## 8. 마지막 점검 체크리스트
 
 - 이 선택은 최소 권한을 지키는가
@@ -123,6 +145,7 @@
 - 이 서비스는 운영 부담을 줄이는가
 - 이 경로는 공용 인터넷을 우회할 수 있는가
 
+<a id="exam-tips"></a>
 ## 9. 실전 풀이 팁
 
 - 먼저 오답 두 개를 버리고 남은 둘을 비교한다.

@@ -2,6 +2,24 @@
 
 이 장은 개별 서비스 암기를 아키텍처 의사결정으로 연결하는 장이다. 시험 문제는 대부분 서비스 이름보다 요구사항 조합으로 출제되므로, 패턴 단위로 정리해야 점수가 올라간다. 주요 Mermaid 원본은 `diagrams/` 디렉터리에도 함께 보관한다.
 
+<div class="chapter-overview">
+  <h2>이 장에서 바로 이동할 수 있는 패턴</h2>
+  <p>고가용성, 서버리스, 이벤트 기반, 글로벌 전송, 데이터 레이크, DR 패턴을 빠르게 비교해 문제에 대응할 수 있다.</p>
+  <div class="chapter-overview-links">
+    <a href="#pattern-ha-web">고가용성 웹</a>
+    <a href="#pattern-serverless">서버리스</a>
+    <a href="#pattern-event-driven">이벤트 기반</a>
+    <a href="#pattern-microservices">마이크로서비스</a>
+    <a href="#pattern-read-scale">읽기 확장</a>
+    <a href="#pattern-global-content">글로벌 전송</a>
+    <a href="#pattern-data-lake">데이터 레이크</a>
+    <a href="#pattern-dr">DR</a>
+    <a href="#pattern-security-network">보안 우선 네트워크</a>
+    <a href="#pattern-cost">비용 최적화</a>
+    <a href="#pattern-decision-guide">의사결정 가이드</a>
+  </div>
+</div>
+
 <a id="pattern-ha-web"></a>
 ## 1. 고가용성 웹 아키텍처 패턴
 
@@ -139,6 +157,7 @@ graph TD
 - 적재, 가공, 분석 계층을 나누면 비용과 보안 정책을 데이터 단계별로 적용하기 쉽다.
 - 시험 포인트: "대용량 원본 저장", "유연한 확장", "저비용 장기 보관"이 보이면 `Amazon S3` 기반 데이터 레이크를 우선 검토한다.
 
+<a id="pattern-dr"></a>
 ## 8. DR 패턴
 
 ### Backup and Restore
@@ -161,6 +180,7 @@ graph TD
 - 가장 비싸지만 복구 시간과 복구 시점이 가장 유리하다.
 - `Route 53`, `Global Accelerator`, `DynamoDB Global Tables`, `Aurora Global Database`가 함께 나올 수 있다.
 
+<a id="pattern-security-network"></a>
 ## 9. 보안 우선 네트워크 패턴
 
 ```mermaid
@@ -177,6 +197,7 @@ graph TD
 - 내부 서비스는 `Security Group` 참조와 `VPC Endpoints`로 보호한다.
 - 시험 포인트: 데이터베이스는 프라이빗, 관리자 접근은 제한된 경로, 로그는 중앙 저장소로 보낸다.
 
+<a id="pattern-cost"></a>
 ## 10. 비용 최적화 패턴
 
 - 상시 부하는 `Savings Plans` 또는 `Reserved Instances`
@@ -192,6 +213,7 @@ graph TD
 - "비용 절감"이 있으면 약정 할인, 스팟, 수명 주기 정책을 함께 본다.
 - "보안 강화"가 있으면 최소 권한, 암호화, 프라이빗 경로, 감사 로그를 조합한다.
 
+<a id="pattern-decision-guide"></a>
 ## 12. 아키텍처 의사결정 가이드
 
 아래 가이드는 시험 문제를 읽을 때 서비스를 고르는 순서를 빠르게 정리하기 위한 것이다. 정답은 기능만이 아니라 운영 모델과 비용 제약까지 함께 만족해야 한다.

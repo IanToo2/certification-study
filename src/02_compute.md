@@ -2,6 +2,22 @@
 
 컴퓨트 영역은 시험에서 가장 넓게 출제된다. `Amazon EC2`, 오토스케일링, 서버리스, 컨테이너, 관리형 플랫폼이 어떤 문제에 맞는지 구분해야 한다. 핵심은 운영 부담, 확장 단위, 실행 시간, 상태 저장 여부다.
 
+<div class="chapter-overview">
+  <h2>이 장에서 바로 찾을 수 있는 서비스</h2>
+  <p>서버 제어, 서버리스 함수, 컨테이너, 관리형 플랫폼 사이의 선택 기준을 빠르게 점프해서 볼 수 있다.</p>
+  <div class="chapter-overview-links">
+    <a href="#amazon-ec2">Amazon EC2</a>
+    <a href="#ec2-instance-types">EC2 Instance Types</a>
+    <a href="#ec2-placement-groups">EC2 Placement Groups</a>
+    <a href="#auto-scaling">Auto Scaling</a>
+    <a href="#launch-templates">Launch Templates</a>
+    <a href="#aws-lambda">AWS Lambda</a>
+    <a href="#elastic-beanstalk">Elastic Beanstalk</a>
+    <a href="#amazon-ecs">Amazon ECS</a>
+    <a href="#aws-fargate">AWS Fargate</a>
+  </div>
+</div>
+
 ## Amazon EC2
 
 ### 1. 서비스 개념

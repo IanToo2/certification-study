@@ -2,6 +2,21 @@
 
 이 장은 SAA-C03에서 가장 자주 연결 출제되는 보안 기본기를 정리한다. 보안 문제는 단독 서비스 암기보다 `누가 접근하는가`, `어떤 자격 증명을 쓰는가`, `어디에서 암호화하는가`, `네트워크 경로를 인터넷 없이 닫을 수 있는가`를 함께 판단해야 풀린다.
 
+<div class="chapter-overview">
+  <h2>이 장에서 바로 찾을 수 있는 서비스</h2>
+  <p>권한 제어, 암호화, 비밀값 관리, 최종 사용자 인증, 네트워크 차단 계층을 빠르게 오가며 복습할 수 있다.</p>
+  <div class="chapter-overview-links">
+    <a href="#iam">IAM</a>
+    <a href="#iam-roles">IAM Roles</a>
+    <a href="#iam-policies">IAM Policies</a>
+    <a href="#kms">KMS</a>
+    <a href="#secrets-manager">Secrets Manager</a>
+    <a href="#amazon-cognito">Amazon Cognito</a>
+    <a href="#security-groups">Security Groups</a>
+    <a href="#network-acl">Network ACL</a>
+  </div>
+</div>
+
 ## 빠른 관점 정리
 
 - 인증은 `누구인가`, 인가는 `무엇을 할 수 있는가`다.

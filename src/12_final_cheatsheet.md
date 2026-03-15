@@ -11,6 +11,22 @@
   </div>
 </div>
 
+<div class="chapter-overview">
+  <h2>이 장에서 바로 보는 치트시트 묶음</h2>
+  <p>서비스 한 줄 요약, 아키텍처 단축 공식, 비교 한 줄 정리, 함정 포인트를 시험 직전 속도로 다시 볼 수 있다.</p>
+  <div class="chapter-overview-links">
+    <a href="#cheatsheet-service-summary">서비스 한 줄 요약</a>
+    <a href="#cheatsheet-architecture-shortcuts">아키텍처 단축 공식</a>
+    <a href="#cheatsheet-service-shortcuts">서비스 선택 지름길</a>
+    <a href="#cheatsheet-search-terms">검색어로 바로 떠올리는 서비스</a>
+    <a href="#cheatsheet-compare">헷갈리는 비교 한 줄 정리</a>
+    <a href="#cheatsheet-traps">자주 나오는 시험 함정</a>
+    <a href="#cheatsheet-checkpoints">시험 직전 체크포인트</a>
+    <a href="#cheatsheet-diagram">30초 복습 다이어그램</a>
+  </div>
+</div>
+
+<a id="cheatsheet-service-summary"></a>
 ## 1. 서비스 한 줄 요약
 
 ### 보안
@@ -83,6 +99,7 @@
 - `Reserved Instances`: 고정 장기 할인
 - `Spot Instances`: 중단 허용 대폭 할인
 
+<a id="cheatsheet-architecture-shortcuts"></a>
 ## 2. 아키텍처 단축 공식
 
 - 정적 웹사이트 호스팅: `Amazon S3 + Amazon CloudFront + Amazon Route 53`
@@ -96,6 +113,7 @@
 - 프라이빗 서브넷의 AWS 서비스 접근: `VPC Endpoints`
 - 장기 로그 보관 비용 절감: `S3 Lifecycle + Glacier`
 
+<a id="cheatsheet-service-shortcuts"></a>
 ## 3. 서비스 선택 지름길
 
 - 서버 제어 필요: `Amazon EC2`
@@ -109,6 +127,7 @@
 - 초저지연 NoSQL: `Amazon DynamoDB`
 - 읽기 캐시: `Amazon ElastiCache`
 
+<a id="cheatsheet-search-terms"></a>
 ## 4. 검색어로 바로 떠올리는 서비스
 
 - 정적 웹사이트, 정적 사이트 호스팅: `Amazon S3 + Amazon CloudFront`
@@ -122,6 +141,7 @@
 - 경로 기반 라우팅, 호스트 기반 라우팅: `Application Load Balancer`
 - 공용 인터넷 없이 AWS 서비스 접근: `VPC Endpoints`
 
+<a id="cheatsheet-compare"></a>
 ## 5. 헷갈리는 비교 한 줄 정리
 
 - `Multi-AZ`는 고가용성, `Read Replica`는 읽기 확장
@@ -133,6 +153,7 @@
 - `Application Load Balancer`는 L7, `Network Load Balancer`는 L4
 - `Amazon RDS`는 관계형, `Amazon DynamoDB`는 NoSQL
 
+<a id="cheatsheet-traps"></a>
 ## 6. 자주 나오는 시험 함정
 
 - 고가용성 요구인데 `Read Replica`만 선택
@@ -150,6 +171,7 @@
 - 팬아웃 메시징: `Amazon SNS`
 - 이벤트 라우팅: `Amazon EventBridge`
 
+<a id="cheatsheet-checkpoints"></a>
 ## 8. 시험 직전 체크포인트
 
 - 고가용성 요구면 Multi-AZ 여부를 먼저 본다.
@@ -168,6 +190,7 @@
 - 장기 보관, 수명 주기 정책, 아카이브
 - 초저지연 NoSQL, 관계형 SQL, 고성능 관계형 DB
 
+<a id="cheatsheet-diagram"></a>
 ## 10. 30초 복습 다이어그램
 
 ```text

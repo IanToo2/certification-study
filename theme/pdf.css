@@ -89,6 +89,7 @@
   .shortcut-card,
   .topic-link,
   .jump-card,
+  .chapter-overview,
   .index-hero,
   .exam-callout,
   .callout-box,
@@ -110,6 +111,7 @@
   .shortcut-card,
   .topic-link,
   .jump-card,
+  .chapter-overview,
   .index-hero,
   .exam-callout,
   .callout-box {
@@ -123,7 +125,8 @@
   .path-grid,
   .shortcut-grid,
   .topic-grid,
-  .quick-jump-grid {
+  .quick-jump-grid,
+  .chapter-overview-links {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 0.65rem !important;
   }

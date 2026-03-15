@@ -2,6 +2,17 @@
 
 비용 최적화 문제는 단순히 싼 서비스를 고르는 시험이 아니다. 사용 패턴에 맞는 과금 모델을 선택하고, 성능과 가용성을 해치지 않으면서 낭비를 줄이는 것이 핵심이다.
 
+<div class="chapter-overview">
+  <h2>이 장에서 바로 찾을 수 있는 서비스</h2>
+  <p>약정 할인, 스팟, 스토리지 수명 주기를 사용 패턴과 함께 빠르게 비교할 수 있다.</p>
+  <div class="chapter-overview-links">
+    <a href="#savings-plans">Savings Plans</a>
+    <a href="#reserved-instances">Reserved Instances</a>
+    <a href="#spot-instances">Spot Instances</a>
+    <a href="#s3-lifecycle">S3 Lifecycle</a>
+  </div>
+</div>
+
 ## Savings Plans
 
 ### 1. 서비스 개념

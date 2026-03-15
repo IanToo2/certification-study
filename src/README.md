@@ -27,6 +27,7 @@
       <button class="search-trigger" type="button" data-open-search="true">검색창 열기</button>
       <a class="secondary-link" href="12_final_cheatsheet.md">시험 직전 치트시트</a>
       <a class="secondary-link" href="exam-questions/exam_strategy.md">시험 전략 보기</a>
+      <span class="search-shortcut-hint">검색 단축키: <code>/</code> 또는 <code>S</code></span>
     </div>
   </section>
 

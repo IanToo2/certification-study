@@ -2,6 +2,21 @@
 
 스토리지 문제는 내구성, 성능, 공유 방식, 보관 기간, 비용이 함께 출제된다. `Amazon S3`와 블록 스토리지, 파일 스토리지, 아카이브 스토리지를 각각 어떤 문제에 적용하는지 구분해야 한다.
 
+<div class="chapter-overview">
+  <h2>이 장에서 바로 찾을 수 있는 서비스</h2>
+  <p>정적 웹사이트, 객체 저장, 블록 디스크, 공유 파일 시스템, 장기 보관 시나리오를 바로 비교할 수 있다.</p>
+  <div class="chapter-overview-links">
+    <a href="#amazon-s3">Amazon S3</a>
+    <a href="#s3-storage-classes">S3 Storage Classes</a>
+    <a href="#s3-lifecycle">S3 Lifecycle</a>
+    <a href="#s3-replication">S3 Replication</a>
+    <a href="#amazon-ebs">Amazon EBS</a>
+    <a href="#amazon-efs">Amazon EFS</a>
+    <a href="#amazon-fsx">Amazon FSx</a>
+    <a href="#glacier">Glacier</a>
+  </div>
+</div>
+
 ## Amazon S3
 
 ### 1. 서비스 개념

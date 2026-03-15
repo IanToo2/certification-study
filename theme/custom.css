@@ -44,13 +44,25 @@
 }
 
 .sidebar .part-title {
-  margin: 1.3rem 0 0.35rem;
+  position: relative;
+  margin: 1.15rem 0 0.45rem;
   padding: 0 1rem;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
-  color: var(--book-accent);
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--book-accent-strong);
+}
+
+.sidebar .part-title::before {
+  content: "";
+  display: block;
+  margin-bottom: 0.45rem;
+  border-top: 1px solid rgba(15, 76, 129, 0.14);
+}
+
+.sidebar li.spacer {
+  margin: 0.7rem 1rem 0.85rem;
+  border-top: 1px solid rgba(15, 76, 129, 0.1);
 }
 
 .sidebar .chapter > li > a {
@@ -146,8 +158,8 @@
 .shortcut-card:hover,
 .topic-link:hover,
 .jump-card:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 12px 32px rgba(13, 42, 62, 0.08);
+  transform: translateY(-0.5px);
+  box-shadow: 0 10px 24px rgba(13, 42, 62, 0.06);
 }
 
 .cta-primary {
@@ -191,6 +203,15 @@
   background: var(--book-accent);
   border-color: var(--book-accent);
   color: #ffffff;
+}
+
+.search-shortcut-hint {
+  color: var(--book-text-soft);
+  font-size: 0.92rem;
+}
+
+.search-shortcut-hint code {
+  font-size: 0.88rem;
 }
 
 .dashboard-section {
@@ -285,6 +306,47 @@ button.search-chip {
   color: var(--book-text-soft);
 }
 
+.chapter-overview {
+  margin: 1.1rem 0 1.45rem;
+  padding: 1rem 1.05rem;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 76, 129, 0.14);
+  background: linear-gradient(180deg, #f8fbfe, #eef5fb);
+}
+
+.chapter-overview h2,
+.chapter-overview h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+}
+
+.chapter-overview p {
+  margin-top: 0;
+  color: var(--book-text-soft);
+}
+
+.chapter-overview-links {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 0.9rem;
+}
+
+.chapter-overview-links a {
+  display: block;
+  padding: 0.8rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 76, 129, 0.12);
+  background: #ffffff;
+  color: var(--book-accent-strong);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.chapter-overview-links a:hover {
+  background: #f6fbff;
+}
+
 .compact-section ul {
   margin-bottom: 0;
 }
@@ -371,7 +433,8 @@ button.search-chip {
   .feature-grid,
   .path-grid,
   .shortcut-grid,
-  .topic-grid {
+  .topic-grid,
+  .chapter-overview-links {
     grid-template-columns: 1fr;
   }
 }

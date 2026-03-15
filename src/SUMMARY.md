@@ -2,6 +2,8 @@
 
 - [소개](README.md)
 
+---
+
 # 기초 학습
 
 - [1장. Identity & Security](01_identity_security.md)
@@ -13,17 +15,23 @@
 - [7장. Monitoring](07_monitoring.md)
 - [8장. Cost Optimization](08_cost_optimization.md)
 
+---
+
 # 아키텍처와 비교
 
 - [9장. Architecture Patterns](09_architecture_patterns.md)
 - [10장. Service Comparisons](10_service_comparisons.md)
 - [키워드 인덱스](keyword_index.md)
 
+---
+
 # 시험 직전 복습
 
 - [11장. Exam Patterns](11_exam_patterns.md)
 - [12장. Final Cheatsheet](12_final_cheatsheet.md)
 - [13장. Exam Strategy](exam-questions/exam_strategy.md)
+
+---
 
 # 모의고사
 

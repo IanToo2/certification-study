@@ -2,6 +2,16 @@
 
 모니터링과 감사 서비스는 직접 정답으로도 나오지만, 보안과 운영 문제의 보조 선택지로도 자주 등장한다. 로그, 메트릭, 구성 기록의 역할을 분리해 이해해야 한다.
 
+<div class="chapter-overview">
+  <h2>이 장에서 바로 찾을 수 있는 서비스</h2>
+  <p>운영 모니터링, API 감사, 구성 추적의 차이를 빠르게 점프해서 확인할 수 있다.</p>
+  <div class="chapter-overview-links">
+    <a href="#amazon-cloudwatch">Amazon CloudWatch</a>
+    <a href="#aws-cloudtrail">AWS CloudTrail</a>
+    <a href="#aws-config">AWS Config</a>
+  </div>
+</div>
+
 ## Amazon CloudWatch
 
 ### 1. 서비스 개념

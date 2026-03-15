@@ -2,19 +2,23 @@
 
 이 장은 시험에서 헷갈리기 쉬운 서비스를 직접 비교해 선택 기준을 압축 정리한다. 비교 문제는 "둘 다 될 것 같아 보이는 선택지" 중 하나를 버리는 능력이 중요하다.
 
-<div class="quick-jump-grid">
-  <a class="jump-card" href="#cmp-compute">Compute 비교</a>
-  <a class="jump-card" href="#cmp-storage">Storage 비교</a>
-  <a class="jump-card" href="#cmp-load-balancer">Load Balancer 비교</a>
-  <a class="jump-card" href="#cmp-messaging">Messaging 비교</a>
-  <a class="jump-card" href="#cmp-rds-ddb">RDS vs DynamoDB</a>
-  <a class="jump-card" href="#cmp-aurora-rds">Aurora vs RDS</a>
-  <a class="jump-card" href="#cmp-observability">CloudWatch vs CloudTrail vs Config</a>
-  <a class="jump-card" href="#cmp-ha-vs-read">Multi-AZ vs Read Replica</a>
-  <a class="jump-card" href="#cmp-global-delivery">CloudFront vs Global Accelerator vs Route 53</a>
-  <a class="jump-card" href="#cmp-network-filter">Security Group vs Network ACL</a>
-  <a class="jump-card" href="#cmp-network-path">Internet Gateway vs NAT Gateway vs VPC Endpoint</a>
-  <a class="jump-card" href="#cmp-cost">Savings Plans vs Reserved Instances vs Spot Instances</a>
+<div class="chapter-overview">
+  <h2>이 장에서 바로 찾을 수 있는 비교</h2>
+  <p>헷갈리기 쉬운 서비스 쌍을 바로 이동해서 보고, 검색 키워드와 시험 시나리오를 함께 정리할 수 있다.</p>
+  <div class="quick-jump-grid">
+    <a class="jump-card" href="#cmp-compute">Compute 비교</a>
+    <a class="jump-card" href="#cmp-storage">Storage 비교</a>
+    <a class="jump-card" href="#cmp-load-balancer">Load Balancer 비교</a>
+    <a class="jump-card" href="#cmp-messaging">Messaging 비교</a>
+    <a class="jump-card" href="#cmp-rds-ddb">RDS vs DynamoDB</a>
+    <a class="jump-card" href="#cmp-aurora-rds">Aurora vs RDS</a>
+    <a class="jump-card" href="#cmp-observability">CloudWatch vs CloudTrail vs Config</a>
+    <a class="jump-card" href="#cmp-ha-vs-read">Multi-AZ vs Read Replica</a>
+    <a class="jump-card" href="#cmp-global-delivery">CloudFront vs Global Accelerator vs Route 53</a>
+    <a class="jump-card" href="#cmp-network-filter">Security Group vs Network ACL</a>
+    <a class="jump-card" href="#cmp-network-path">Internet Gateway vs NAT Gateway vs VPC Endpoint</a>
+    <a class="jump-card" href="#cmp-cost">Savings Plans vs Reserved Instances vs Spot Instances</a>
+  </div>
 </div>
 
 ## 0. 이 장을 검색 허브처럼 활용하는 방법
