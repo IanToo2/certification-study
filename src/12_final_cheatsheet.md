@@ -77,8 +77,8 @@
 ## 2. 아키텍처 단축 공식
 
 - 정적 웹사이트 호스팅: `Amazon S3 + Amazon CloudFront + Amazon Route 53`
-- 고가용성 웹 애플리케이션: `ALB + Auto Scaling + Multi-AZ RDS`
-- 서버리스 API: `API Gateway + AWS Lambda + Amazon DynamoDB`
+- 고가용성 웹 애플리케이션: `Application Load Balancer + Auto Scaling + Multi-AZ Amazon RDS`
+- 서버리스 API: `Amazon API Gateway + AWS Lambda + Amazon DynamoDB`
 - 비동기 컴포넌트 분리: `Amazon SQS`
 - 이벤트 팬아웃: `Amazon SNS`
 - 규칙 기반 이벤트 라우팅: `Amazon EventBridge`
@@ -100,7 +100,20 @@
 - 초저지연 NoSQL: `Amazon DynamoDB`
 - 읽기 캐시: `Amazon ElastiCache`
 
-## 4. 헷갈리는 비교 한 줄 정리
+## 4. 검색어로 바로 떠올리는 서비스
+
+- 정적 웹사이트, 정적 사이트 호스팅: `Amazon S3 + Amazon CloudFront`
+- 비동기 메시지 처리, decouple application components: `Amazon SQS`
+- 팬아웃, pub/sub, 다중 구독: `Amazon SNS`
+- 이벤트 라우팅, 이벤트 버스: `Amazon EventBridge`
+- 공유 파일 시스템, NFS, 다중 EC2 파일 공유: `Amazon EFS`
+- 블록 스토리지, 서버 디스크, 부팅 볼륨: `Amazon EBS`
+- 초저지연 NoSQL, 키-값 저장소, 세션 저장소: `Amazon DynamoDB`
+- 고정 IP 로드 밸런서, 초고성능 TCP/UDP: `Network Load Balancer`
+- 경로 기반 라우팅, 호스트 기반 라우팅: `Application Load Balancer`
+- 공용 인터넷 없이 AWS 서비스 접근: `VPC Endpoints`
+
+## 5. 헷갈리는 비교 한 줄 정리
 
 - `Multi-AZ`는 고가용성, `Read Replica`는 읽기 확장
 - `Security Group`은 상태 저장, `Network ACL`은 상태 비저장
@@ -111,7 +124,7 @@
 - `Application Load Balancer`는 L7, `Network Load Balancer`는 L4
 - `Amazon RDS`는 관계형, `Amazon DynamoDB`는 NoSQL
 
-## 5. 자주 나오는 시험 함정
+## 6. 자주 나오는 시험 함정
 
 - 고가용성 요구인데 `Read Replica`만 선택
 - 팬아웃 문제인데 `Amazon SQS`만 선택
@@ -122,13 +135,13 @@
 - 중단 불가 워크로드에 `Spot Instances`를 선택
 - 상태 저장 세션 구조를 그대로 두고 오토스케일링만 추가
 
-## 6. Decouple/Fanout/Routing 3종 세트
+## 7. Decouple/Fanout/Routing 3종 세트
 
 - 애플리케이션 컴포넌트 분리: `Amazon SQS`
 - 팬아웃 메시징: `Amazon SNS`
 - 이벤트 라우팅: `Amazon EventBridge`
 
-## 7. 시험 직전 체크포인트
+## 8. 시험 직전 체크포인트
 
 - 고가용성 요구면 Multi-AZ 여부를 먼저 본다.
 - 비용 요구면 사용 패턴이 안정적인지 변동적인지 본다.
@@ -136,7 +149,17 @@
 - 운영 부담 최소화 요구면 관리형/서버리스 서비스 우선이다.
 - 인터넷을 거치지 않아야 하면 `VPC Endpoints` 가능 여부를 본다.
 
-## 8. 30초 복습 다이어그램
+## 9. 빠른 검색 키워드 묶음
+
+- 정적 웹사이트, 글로벌 엣지 캐시, CDN
+- 비동기 큐, 팬아웃, 이벤트 버스
+- 공유 파일 시스템, 블록 스토리지, 객체 스토리지
+- 읽기 확장, 고가용성, 자동 페일오버
+- 고정 IP, 경로 기반 라우팅, Anycast
+- 장기 보관, 수명 주기 정책, 아카이브
+- 초저지연 NoSQL, 관계형 SQL, 고성능 관계형 DB
+
+## 10. 30초 복습 다이어그램
 
 ```text
 Users
@@ -159,7 +182,7 @@ Auto Scaling / ECS / Fargate / Lambda
   +--> S3
 ```
 
-## 9. 마지막 조언
+## 11. 마지막 조언
 
 - 가장 익숙한 서비스가 아니라 가장 적은 운영 부담으로 요구사항을 만족하는 서비스를 고른다.
 - 오답은 대개 요구사항 하나를 놓친 선택지다.

@@ -2,7 +2,18 @@
 
 이 장은 시험에서 헷갈리기 쉬운 서비스를 직접 비교해 선택 기준을 압축 정리한다. 비교 문제는 "둘 다 될 것 같아 보이는 선택지" 중 하나를 버리는 능력이 중요하다.
 
+## 0. 이 장을 검색 허브처럼 활용하는 방법
+
+- 서버 제어, 서버리스 함수, 서버리스 컨테이너가 헷갈리면 `Amazon EC2`, `AWS Lambda`, `AWS Fargate` 비교를 먼저 본다.
+- 정적 웹사이트, 블록 스토리지, 공유 파일 시스템이 헷갈리면 `Amazon S3`, `Amazon EBS`, `Amazon EFS`를 찾는다.
+- 고정 IP 로드 밸런서, 경로 기반 라우팅, L4, L7 키워드는 `Application Load Balancer`, `Network Load Balancer` 비교로 연결된다.
+- 비동기 메시지 처리, 팬아웃, 이벤트 라우팅은 `Amazon SQS`, `Amazon SNS`, `Amazon EventBridge` 비교에서 정리한다.
+- SQL, 관계형, 초저지연 NoSQL, 키-값 저장소는 `Amazon RDS`, `Amazon DynamoDB`, `Amazon Aurora` 비교를 본다.
+- 모니터링, 감사 로그, 구성 준수는 `Amazon CloudWatch`, `AWS CloudTrail`, `AWS Config`를 같이 본다.
+
 ## 1. Amazon EC2 vs AWS Lambda vs AWS Fargate
+
+검색 키워드: 서버 제어, 서버리스 함수, 서버리스 컨테이너, 컨테이너 서버 관리 제거
 
 | 기준 | Amazon EC2 | AWS Lambda | AWS Fargate |
 |---|---|---|---|
@@ -20,6 +31,8 @@
 
 ## 2. Amazon S3 vs Amazon EBS vs Amazon EFS
 
+검색 키워드: 정적 웹사이트, 객체 저장소, 블록 스토리지, 공유 파일 시스템, NFS
+
 | 기준 | Amazon S3 | Amazon EBS | Amazon EFS |
 |---|---|---|---|
 | 아키텍처 유형 | 객체 스토리지 | 블록 스토리지 | 공유 파일 스토리지 |
@@ -36,6 +49,8 @@
 
 ## 3. Application Load Balancer vs Network Load Balancer
 
+검색 키워드: 경로 기반 라우팅, 호스트 기반 라우팅, 고정 IP 로드 밸런서, L7, L4
+
 | 기준 | Application Load Balancer | Network Load Balancer |
 |---|---|---|
 | 아키텍처 유형 | L7 HTTP/HTTPS 로드 밸런서 | L4 TCP/UDP/TLS 로드 밸런서 |
@@ -50,6 +65,8 @@
 - TCP/UDP, 정적 IP, 소스 IP 보존 요구면 `Network Load Balancer`
 
 ## 4. Amazon SQS vs Amazon SNS vs Amazon EventBridge
+
+검색 키워드: 비동기 메시지 처리, 메시지 큐, 팬아웃, pub/sub, 이벤트 라우팅, 이벤트 버스
 
 | 기준 | Amazon SQS | Amazon SNS | Amazon EventBridge |
 |---|---|---|---|
@@ -67,6 +84,8 @@
 
 ## 5. Amazon RDS vs Amazon DynamoDB
 
+검색 키워드: 관계형 데이터베이스, SQL, 초저지연 NoSQL, 키-값 저장소, 세션 저장소
+
 | 기준 | Amazon RDS | Amazon DynamoDB |
 |---|---|---|
 | 아키텍처 유형 | 관리형 관계형 DB | 서버리스 NoSQL |
@@ -82,6 +101,8 @@
 
 ## 6. Amazon Aurora vs Amazon RDS
 
+검색 키워드: 고성능 관계형 데이터베이스, 빠른 장애 복구, Reader 확장, 범용 SQL 데이터베이스
+
 | 기준 | Amazon Aurora | Amazon RDS |
 |---|---|---|
 | 아키텍처 유형 | 클라우드 네이티브 관계형 클러스터 | 관리형 관계형 인스턴스 |
@@ -96,6 +117,8 @@
 - 범용 관리형 관계형 DB면 `Amazon RDS`
 
 ## 7. Amazon CloudWatch vs AWS CloudTrail vs AWS Config
+
+검색 키워드: 모니터링, 로그 알람, API 감사, 누가 변경했는가, 구성 준수, 퍼블릭 버킷 탐지
 
 | 기준 | Amazon CloudWatch | AWS CloudTrail | AWS Config |
 |---|---|---|---|
@@ -113,6 +136,8 @@
 
 ## 8. Multi-AZ vs Read Replica
 
+검색 키워드: 고가용성, 자동 페일오버, 읽기 확장, 리포팅 DB, read scaling
+
 | 기준 | Multi-AZ | Read Replica |
 |---|---|---|
 | 아키텍처 유형 | 고가용성 구성 | 읽기 확장 구성 |
@@ -127,6 +152,8 @@
 - 읽기 성능 문제인데 `Multi-AZ`만 추가해도 해결되지 않는다.
 
 ## 9. Amazon CloudFront vs AWS Global Accelerator vs Amazon Route 53
+
+검색 키워드: 글로벌 저지연, CDN, 엣지 캐시, Anycast 고정 IP, DNS 라우팅
 
 | 기준 | Amazon CloudFront | AWS Global Accelerator | Amazon Route 53 |
 |---|---|---|---|
@@ -144,6 +171,8 @@
 
 ## 10. Security Group vs Network ACL
 
+검색 키워드: 상태 저장 방화벽, 상태 비저장 필터, 서브넷 차단, 인스턴스 보안 규칙
+
 | 기준 | Security Group | Network ACL |
 |---|---|---|
 | 아키텍처 유형 | 인스턴스/ENI 수준 가상 방화벽 | 서브넷 수준 네트워크 필터 |
@@ -158,6 +187,8 @@
 - 명시적 거부와 서브넷 경계는 `Network ACL`
 
 ## 11. Internet Gateway vs NAT Gateway vs VPC Endpoint
+
+검색 키워드: 프라이빗 아웃바운드, 인터넷 게이트웨이, AWS 서비스 사설 접근, 공용 인터넷 우회
 
 | 기준 | Internet Gateway | NAT Gateway | VPC Endpoint |
 |---|---|---|---|
@@ -174,6 +205,8 @@
 - AWS 서비스만 사설 접근하면 `VPC Endpoint`
 
 ## 12. Savings Plans vs Reserved Instances vs Spot Instances
+
+검색 키워드: 장기 할인, 사용량 약정, 고정 장기 할인, 중단 허용 저비용 컴퓨트
 
 | 기준 | Savings Plans | Reserved Instances | Spot Instances |
 |---|---|---|---|
@@ -194,3 +227,4 @@
 - 그다음 운영 모델과 고가용성을 본다.
 - 마지막으로 비용 최적화 수단을 본다.
 - 시험에서는 더 많은 기능보다 더 적절한 제약 조건 충족이 정답이다.
+- 검색할 때는 한국어 개념어와 AWS 서비스명을 함께 떠올리면 더 빨리 원하는 표를 찾을 수 있다.
