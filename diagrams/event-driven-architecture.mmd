@@ -1,0 +1,11 @@
+graph TD
+    P[Producer Service] --> EB[Amazon EventBridge]
+    EB --> R1[Rule: Payment Events]
+    EB --> R2[Rule: Inventory Events]
+    EB --> R3[Rule: Notification Events]
+    R1 --> Q1[Amazon SQS Payment Queue]
+    R2 --> Q2[Amazon SQS Inventory Queue]
+    R3 --> SN[Amazon SNS Topic]
+    Q1 --> L1[AWS Lambda Payment Worker]
+    Q2 --> L2[AWS Lambda Inventory Worker]
+    SN --> L3[AWS Lambda Notification Worker]

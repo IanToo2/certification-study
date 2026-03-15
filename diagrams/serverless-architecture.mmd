@@ -1,0 +1,9 @@
+graph TD
+    C[Client / Mobile App] --> APIGW[Amazon API Gateway]
+    APIGW --> L1[AWS Lambda]
+    L1 --> DDB[Amazon DynamoDB]
+    L1 --> S3[Amazon S3]
+    L1 --> SF[AWS Step Functions]
+    S3 --> EVT[Amazon EventBridge]
+    EVT --> L2[AWS Lambda Async Worker]
+    L2 --> SNS[Amazon SNS]

@@ -1,0 +1,11 @@
+graph TD
+    U[Client] --> R53[Amazon Route 53]
+    R53 --> CF[Amazon CloudFront]
+    CF --> ALB[Application Load Balancer]
+    ALB --> APPA[App Tier AZ-a]
+    ALB --> APPB[App Tier AZ-b]
+    APPA --> CACHE[Amazon ElastiCache]
+    APPB --> CACHE
+    APPA --> DB[(Amazon RDS / Amazon Aurora Writer)]
+    APPB --> DB
+    DB --> STBY[(Multi-AZ Standby)]

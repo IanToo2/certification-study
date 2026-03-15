@@ -1,0 +1,24 @@
+[book]
+title = "AWS SAA-C03 한국어 스터디북"
+authors = ["Codex"]
+description = "AWS Solutions Architect Associate(SAA-C03) 시험 대비용 한국어 스터디북"
+language = "ko"
+multilingual = false
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "light"
+git-repository-url = "https://github.com/IanToo2/certification-study"
+site-url = "/certification-study/"
+
+[output.html.print]
+enable = true
+page-break = true
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"

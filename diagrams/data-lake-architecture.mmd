@@ -1,0 +1,7 @@
+graph TD
+    SRC[App Logs / DB Export / IoT Data] --> ING[Amazon Kinesis / AWS DataSync]
+    ING --> RAW[Amazon S3 Raw Zone]
+    RAW --> ETL[AWS Glue / AWS Lambda ETL]
+    ETL --> CUR[Amazon S3 Curated Zone]
+    CUR --> ATH[Amazon Athena / Analytics]
+    CUR --> ML[ML / BI Consumers]

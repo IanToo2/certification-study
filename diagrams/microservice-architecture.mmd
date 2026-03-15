@@ -1,0 +1,13 @@
+graph TD
+    U[Client] --> CF[Amazon CloudFront]
+    CF --> ALB[Application Load Balancer]
+    ALB --> API[API Service]
+    ALB --> ORD[Order Service]
+    ALB --> INV[Inventory Service]
+    API --> AUTH[Amazon Cognito]
+    ORD --> EV[Amazon EventBridge]
+    INV --> EV
+    EV --> Q[Amazon SQS]
+    Q --> WRK[AWS Fargate / AWS Lambda Worker]
+    ORD --> DB1[(Amazon Aurora)]
+    INV --> DB2[(Amazon DynamoDB)]
