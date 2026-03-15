@@ -1,0 +1,191 @@
+@page {
+  size: A4;
+  margin: 16mm 14mm 18mm;
+}
+
+@media print {
+  :root {
+    --book-accent: #17324d;
+    --book-accent-soft: #f2f6fa;
+    --book-accent-strong: #102337;
+    --book-warning: #7e4f0f;
+    --book-warning-soft: #fcf6ea;
+    --book-border: #c9d4de;
+    --book-surface: #ffffff;
+    --book-surface-soft: #fafbfd;
+    --book-text-soft: #364656;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  body,
+  .content,
+  .content main {
+    color: #111111 !important;
+    font-size: 10.5pt;
+    line-height: 1.62;
+  }
+
+  #mdbook-help-container,
+  #mdbook-search-wrapper,
+  .search-trigger,
+  .secondary-link,
+  #mdbook-menu-bar,
+  .nav-chapters,
+  .mobile-nav-chapters {
+    display: none !important;
+  }
+
+  .page,
+  .page-wrapper,
+  .content,
+  .content main {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .content main a,
+  .content main a:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .content main h1 {
+    break-before: page;
+    page-break-before: always;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 22pt;
+    border-top: 0;
+  }
+
+  .content main h1:first-of-type {
+    break-before: avoid-page;
+    page-break-before: auto;
+  }
+
+  .content main h2,
+  .content main h3,
+  .content main h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .content main p,
+  .content main li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .home-dashboard,
+  .hero-panel,
+  .dashboard-section,
+  .feature-card,
+  .path-card,
+  .shortcut-card,
+  .topic-link,
+  .jump-card,
+  .index-hero,
+  .exam-callout,
+  .callout-box,
+  blockquote,
+  pre,
+  .table-wrapper,
+  table,
+  svg,
+  .mermaid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  .hero-panel,
+  .dashboard-section,
+  .feature-card,
+  .path-card,
+  .shortcut-card,
+  .topic-link,
+  .jump-card,
+  .index-hero,
+  .exam-callout,
+  .callout-box {
+    background: #ffffff !important;
+    background-image: none !important;
+    border-color: var(--book-border) !important;
+  }
+
+  .hero-actions,
+  .feature-grid,
+  .path-grid,
+  .shortcut-grid,
+  .topic-grid,
+  .quick-jump-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.65rem !important;
+  }
+
+  .search-chip-list {
+    gap: 0.4rem !important;
+  }
+
+  .search-chip {
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  .hero-tools {
+    display: none !important;
+  }
+
+  .content main table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 9.2pt;
+  }
+
+  .content main table th,
+  .content main table td {
+    padding: 0.45rem 0.5rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    vertical-align: top;
+  }
+
+  .table-wrapper {
+    overflow: visible !important;
+  }
+
+  .content main pre,
+  .content main code,
+  .content main code.language-text,
+  .content main code.language-mermaid {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .content main pre {
+    font-size: 8.8pt;
+    border: 1px solid var(--book-border);
+    background: #fbfcfd !important;
+  }
+
+  .content main hr {
+    margin: 0.7rem 0 1rem;
+    border-color: var(--book-border);
+  }
+
+  .exam-page .content main h2 {
+    margin-top: 1rem;
+  }
+
+  .exam-page .content main h2 + p,
+  .exam-page .content main h2 + ul,
+  .exam-page .content main h2 + ol {
+    break-before: avoid;
+    page-break-before: avoid;
+  }
+}

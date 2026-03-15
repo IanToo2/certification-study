@@ -110,3 +110,11 @@ aws-saa-book/
 - 로컬 미리보기 전에는 `scripts/sync_exam_questions.sh`를 실행해 연습문제 파일을 `src/exam-questions/`로 동기화한다.
 - 이후 `mdbook build` 또는 `mdbook serve`로 확인한다.
 - GitHub Pages 배포는 `.github/workflows/deploy-pages.yml`이 `main` 브랜치 푸시 시 자동 수행한다.
+
+## PDF 내보내기
+
+- PDF 생성 전에는 먼저 `scripts/sync_exam_questions.sh`를 실행한다.
+- 이후 `mdbook build`를 실행해 최신 `book/print.html`을 만든다.
+- 브라우저에서 `book/print.html`을 열고 `Print to PDF`로 저장하는 방식을 권장한다.
+- 인쇄 전용 스타일은 `theme/pdf.css`에 분리되어 있어 장 제목, 표, 다이어그램, 모의고사 문항이 PDF에서 더 안정적으로 보이도록 조정되어 있다.
+- 긴 표와 카드형 홈 섹션은 인쇄 시 단순한 책 레이아웃으로 평탄화된다.

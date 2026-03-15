@@ -14,7 +14,7 @@ default-theme = "light"
 preferred-dark-theme = "light"
 git-repository-url = "https://github.com/IanToo2/certification-study"
 site-url = "/certification-study/"
-additional-css = ["theme/custom.css"]
+additional-css = ["theme/custom.css", "theme/pdf.css"]
 additional-js = ["mermaid.min.js", "mermaid-init.js", "theme/ui-enhancements.js"]
 
 [output.html.print]
