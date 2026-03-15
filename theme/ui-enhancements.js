@@ -45,6 +45,18 @@
                 window.setTimeout(() => searchInput.focus(), 80);
             });
         });
+
+        document.querySelectorAll('[data-search-term]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const term = button.getAttribute('data-search-term');
+                searchToggle.click();
+                window.setTimeout(() => {
+                    searchInput.focus();
+                    searchInput.value = term || '';
+                    searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+                }, 80);
+            });
+        });
     }
 
     function decorateCallouts() {

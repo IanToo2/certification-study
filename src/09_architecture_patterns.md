@@ -2,6 +2,7 @@
 
 이 장은 개별 서비스 암기를 아키텍처 의사결정으로 연결하는 장이다. 시험 문제는 대부분 서비스 이름보다 요구사항 조합으로 출제되므로, 패턴 단위로 정리해야 점수가 올라간다. 주요 Mermaid 원본은 `diagrams/` 디렉터리에도 함께 보관한다.
 
+<a id="pattern-ha-web"></a>
 ## 1. 고가용성 웹 아키텍처 패턴
 
 ```mermaid
@@ -23,6 +24,7 @@ graph TD
 - 데이터 계층은 `Amazon RDS Multi-AZ` 또는 `Amazon Aurora`로 보호하고, 읽기 성능이 필요하면 `Read Replica` 또는 Reader endpoint를 추가한다.
 - 시험 포인트: "고가용성"과 "운영 표준화"가 동시에 보이면 `ALB + Multi-AZ + Auto Scaling + 관리형 DB` 조합을 먼저 떠올린다.
 
+<a id="pattern-serverless"></a>
 ## 2. 서버리스 아키텍처 패턴
 
 ```mermaid
@@ -41,6 +43,7 @@ graph TD
 - API 처리와 후속 비동기 작업을 분리하면 서버리스 구조에서도 안정성을 높일 수 있다.
 - 시험 포인트: "서버 관리 없음", "간헐적 트래픽", "사용량 기반 과금"이 핵심 문구다.
 
+<a id="pattern-event-driven"></a>
 ## 3. 이벤트 기반 아키텍처 패턴
 
 ```mermaid
@@ -61,6 +64,7 @@ graph TD
 - 각 소비자는 자기 처리 속도에 맞춰 이벤트를 받으므로 장애 전파를 줄이기 쉽다.
 - 시험 포인트: 규칙 기반 라우팅은 `Amazon EventBridge`, 버퍼링과 재처리는 `Amazon SQS`, 다중 구독 팬아웃은 `Amazon SNS`다.
 
+<a id="pattern-microservices"></a>
 ## 4. 마이크로서비스 아키텍처 패턴
 
 ```mermaid
@@ -83,6 +87,7 @@ graph TD
 - 동기 호출은 최소화하고, 도메인 이벤트는 비동기 경로로 넘겨 병목을 줄인다.
 - 시험 포인트: 서비스별 데이터 분리, 비동기 이벤트 전달, API 진입점 통합이 마이크로서비스 문제의 핵심 단서다.
 
+<a id="pattern-read-scale"></a>
 ## 5. 읽기 중심 확장 패턴
 
 ```mermaid
@@ -101,6 +106,7 @@ graph TD
 - 쓰기 일관성이 중요한 트랜잭션은 Primary로 유지하고 조회성 트래픽만 분리한다.
 - 시험 포인트: `Read Replica`는 읽기 확장, `Multi-AZ`는 고가용성이라는 목적 차이를 반드시 구분해야 한다.
 
+<a id="pattern-global-content"></a>
 ## 6. 글로벌 콘텐츠 배포 패턴
 
 ```mermaid
@@ -116,6 +122,7 @@ graph TD
 - 동적 콘텐츠도 전송 경로 최적화와 TLS 종료에 이점이 있다.
 - 시험 포인트: 캐시가 핵심이면 `CloudFront`, 네트워크 경로 최적화와 고정 IP가 핵심이면 `Global Accelerator`다.
 
+<a id="pattern-data-lake"></a>
 ## 7. 데이터 레이크 아키텍처 패턴
 
 ```mermaid

@@ -53,6 +53,18 @@
   </section>
 
   <section class="dashboard-section">
+    <h2>서비스 바로 찾기</h2>
+    <div class="quick-jump-grid">
+      <a class="jump-card" href="keyword_index.md">키워드 인덱스 전체 보기</a>
+      <a class="jump-card" href="10_service_comparisons.md#cmp-storage">Amazon S3 / Amazon EBS / Amazon EFS</a>
+      <a class="jump-card" href="10_service_comparisons.md#cmp-load-balancer">Application Load Balancer / Network Load Balancer</a>
+      <a class="jump-card" href="10_service_comparisons.md#cmp-messaging">Amazon SQS / Amazon SNS / Amazon EventBridge</a>
+      <a class="jump-card" href="10_service_comparisons.md#cmp-rds-ddb">Amazon RDS / Amazon DynamoDB</a>
+      <a class="jump-card" href="10_service_comparisons.md#cmp-observability">Amazon CloudWatch / AWS CloudTrail / AWS Config</a>
+    </div>
+  </section>
+
+  <section class="dashboard-section">
     <h2>추천 학습 루트</h2>
     <div class="path-grid">
       <article class="path-card">
@@ -128,19 +140,19 @@
   <section class="dashboard-section">
     <h2>빠른 검색 키워드</h2>
     <div class="search-chip-list">
-      <span class="search-chip">정적 웹사이트</span>
-      <span class="search-chip">비동기 메시지 처리</span>
-      <span class="search-chip">팬아웃</span>
-      <span class="search-chip">이벤트 라우팅</span>
-      <span class="search-chip">공유 파일 시스템</span>
-      <span class="search-chip">블록 스토리지</span>
-      <span class="search-chip">초저지연 NoSQL</span>
-      <span class="search-chip">고정 IP 로드 밸런서</span>
-      <span class="search-chip">경로 기반 라우팅</span>
-      <span class="search-chip">서버리스 컨테이너</span>
-      <span class="search-chip">장기 보관</span>
-      <span class="search-chip">VPC Endpoint</span>
-      <span class="search-chip">Amazon Cognito</span>
+      <button class="search-chip" type="button" data-search-term="정적 웹사이트">정적 웹사이트</button>
+      <button class="search-chip" type="button" data-search-term="비동기 메시지 처리">비동기 메시지 처리</button>
+      <button class="search-chip" type="button" data-search-term="팬아웃">팬아웃</button>
+      <button class="search-chip" type="button" data-search-term="이벤트 라우팅">이벤트 라우팅</button>
+      <button class="search-chip" type="button" data-search-term="공유 파일 시스템">공유 파일 시스템</button>
+      <button class="search-chip" type="button" data-search-term="블록 스토리지">블록 스토리지</button>
+      <button class="search-chip" type="button" data-search-term="초저지연 NoSQL">초저지연 NoSQL</button>
+      <button class="search-chip" type="button" data-search-term="고정 IP 로드 밸런서">고정 IP 로드 밸런서</button>
+      <button class="search-chip" type="button" data-search-term="경로 기반 라우팅">경로 기반 라우팅</button>
+      <button class="search-chip" type="button" data-search-term="서버리스 컨테이너">서버리스 컨테이너</button>
+      <button class="search-chip" type="button" data-search-term="장기 보관">장기 보관</button>
+      <button class="search-chip" type="button" data-search-term="VPC Endpoint">VPC Endpoint</button>
+      <button class="search-chip" type="button" data-search-term="Amazon Cognito">Amazon Cognito</button>
     </div>
     <p class="search-hint">
       검색은 문제 문장 그대로보다 <code>요구사항 핵심어 + 서비스명</code> 조합으로 찾는 것이 빠르다.

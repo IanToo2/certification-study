@@ -2,6 +2,21 @@
 
 이 장은 시험에서 헷갈리기 쉬운 서비스를 직접 비교해 선택 기준을 압축 정리한다. 비교 문제는 "둘 다 될 것 같아 보이는 선택지" 중 하나를 버리는 능력이 중요하다.
 
+<div class="quick-jump-grid">
+  <a class="jump-card" href="#cmp-compute">Compute 비교</a>
+  <a class="jump-card" href="#cmp-storage">Storage 비교</a>
+  <a class="jump-card" href="#cmp-load-balancer">Load Balancer 비교</a>
+  <a class="jump-card" href="#cmp-messaging">Messaging 비교</a>
+  <a class="jump-card" href="#cmp-rds-ddb">RDS vs DynamoDB</a>
+  <a class="jump-card" href="#cmp-aurora-rds">Aurora vs RDS</a>
+  <a class="jump-card" href="#cmp-observability">CloudWatch vs CloudTrail vs Config</a>
+  <a class="jump-card" href="#cmp-ha-vs-read">Multi-AZ vs Read Replica</a>
+  <a class="jump-card" href="#cmp-global-delivery">CloudFront vs Global Accelerator vs Route 53</a>
+  <a class="jump-card" href="#cmp-network-filter">Security Group vs Network ACL</a>
+  <a class="jump-card" href="#cmp-network-path">Internet Gateway vs NAT Gateway vs VPC Endpoint</a>
+  <a class="jump-card" href="#cmp-cost">Savings Plans vs Reserved Instances vs Spot Instances</a>
+</div>
+
 ## 0. 이 장을 검색 허브처럼 활용하는 방법
 
 - 서버 제어, 서버리스 함수, 서버리스 컨테이너가 헷갈리면 `Amazon EC2`, `AWS Lambda`, `AWS Fargate` 비교를 먼저 본다.
@@ -11,6 +26,7 @@
 - SQL, 관계형, 초저지연 NoSQL, 키-값 저장소는 `Amazon RDS`, `Amazon DynamoDB`, `Amazon Aurora` 비교를 본다.
 - 모니터링, 감사 로그, 구성 준수는 `Amazon CloudWatch`, `AWS CloudTrail`, `AWS Config`를 같이 본다.
 
+<a id="cmp-compute"></a>
 ## 1. Amazon EC2 vs AWS Lambda vs AWS Fargate
 
 검색 키워드: 서버 제어, 서버리스 함수, 서버리스 컨테이너, 컨테이너 서버 관리 제거
@@ -29,6 +45,7 @@
 - 요청 기반 짧은 처리면 `AWS Lambda`
 - 컨테이너 이미지는 유지하되 서버는 관리하기 싫으면 `AWS Fargate`
 
+<a id="cmp-storage"></a>
 ## 2. Amazon S3 vs Amazon EBS vs Amazon EFS
 
 검색 키워드: 정적 웹사이트, 객체 저장소, 블록 스토리지, 공유 파일 시스템, NFS
@@ -47,6 +64,7 @@
 - 단일 서버용 영구 디스크는 `Amazon EBS`
 - 여러 인스턴스의 공유 파일 시스템은 `Amazon EFS`
 
+<a id="cmp-load-balancer"></a>
 ## 3. Application Load Balancer vs Network Load Balancer
 
 검색 키워드: 경로 기반 라우팅, 호스트 기반 라우팅, 고정 IP 로드 밸런서, L7, L4
@@ -64,6 +82,7 @@
 - URL 경로나 호스트명 기준 분기면 `Application Load Balancer`
 - TCP/UDP, 정적 IP, 소스 IP 보존 요구면 `Network Load Balancer`
 
+<a id="cmp-messaging"></a>
 ## 4. Amazon SQS vs Amazon SNS vs Amazon EventBridge
 
 검색 키워드: 비동기 메시지 처리, 메시지 큐, 팬아웃, pub/sub, 이벤트 라우팅, 이벤트 버스
@@ -82,6 +101,7 @@
 - 동일 이벤트의 다중 구독은 `Amazon SNS`
 - 규칙 기반 이벤트 라우팅은 `Amazon EventBridge`
 
+<a id="cmp-rds-ddb"></a>
 ## 5. Amazon RDS vs Amazon DynamoDB
 
 검색 키워드: 관계형 데이터베이스, SQL, 초저지연 NoSQL, 키-값 저장소, 세션 저장소
@@ -99,6 +119,7 @@
 - 관계형 스키마와 SQL이 필요하면 `Amazon RDS`
 - 초고속 키-값 패턴과 대규모 자동 확장이 핵심이면 `Amazon DynamoDB`
 
+<a id="cmp-aurora-rds"></a>
 ## 6. Amazon Aurora vs Amazon RDS
 
 검색 키워드: 고성능 관계형 데이터베이스, 빠른 장애 복구, Reader 확장, 범용 SQL 데이터베이스
@@ -116,6 +137,7 @@
 - 고성능과 빠른 복구가 더 중요하면 `Amazon Aurora`
 - 범용 관리형 관계형 DB면 `Amazon RDS`
 
+<a id="cmp-observability"></a>
 ## 7. Amazon CloudWatch vs AWS CloudTrail vs AWS Config
 
 검색 키워드: 모니터링, 로그 알람, API 감사, 누가 변경했는가, 구성 준수, 퍼블릭 버킷 탐지
@@ -134,6 +156,7 @@
 - 사용자/API 행위 추적은 `AWS CloudTrail`
 - 리소스 설정 준수 평가는 `AWS Config`
 
+<a id="cmp-ha-vs-read"></a>
 ## 8. Multi-AZ vs Read Replica
 
 검색 키워드: 고가용성, 자동 페일오버, 읽기 확장, 리포팅 DB, read scaling
@@ -151,6 +174,7 @@
 - 고가용성 요구사항인데 `Read Replica`만 선택하면 오답이다.
 - 읽기 성능 문제인데 `Multi-AZ`만 추가해도 해결되지 않는다.
 
+<a id="cmp-global-delivery"></a>
 ## 9. Amazon CloudFront vs AWS Global Accelerator vs Amazon Route 53
 
 검색 키워드: 글로벌 저지연, CDN, 엣지 캐시, Anycast 고정 IP, DNS 라우팅
@@ -169,6 +193,7 @@
 - 글로벌 네트워크 경로 최적화와 고정 IP면 `AWS Global Accelerator`
 - DNS 레벨 정책 라우팅이면 `Amazon Route 53`
 
+<a id="cmp-network-filter"></a>
 ## 10. Security Group vs Network ACL
 
 검색 키워드: 상태 저장 방화벽, 상태 비저장 필터, 서브넷 차단, 인스턴스 보안 규칙
@@ -186,6 +211,7 @@
 - 인스턴스 단위 세밀 제어는 `Security Group`
 - 명시적 거부와 서브넷 경계는 `Network ACL`
 
+<a id="cmp-network-path"></a>
 ## 11. Internet Gateway vs NAT Gateway vs VPC Endpoint
 
 검색 키워드: 프라이빗 아웃바운드, 인터넷 게이트웨이, AWS 서비스 사설 접근, 공용 인터넷 우회
@@ -204,6 +230,7 @@
 - 프라이빗 아웃바운드 전용이면 `NAT Gateway`
 - AWS 서비스만 사설 접근하면 `VPC Endpoint`
 
+<a id="cmp-cost"></a>
 ## 12. Savings Plans vs Reserved Instances vs Spot Instances
 
 검색 키워드: 장기 할인, 사용량 약정, 고정 장기 할인, 중단 허용 저비용 컴퓨트
