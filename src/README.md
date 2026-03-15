@@ -32,109 +32,38 @@
   </section>
 
   <section class="dashboard-section">
-    <h2>이 책으로 얻는 것</h2>
-    <div class="feature-grid">
+    <h2>가장 먼저 선택할 3가지</h2>
+    <div class="feature-grid feature-grid-priority">
       <article class="feature-card">
-        <h3>선택 기준 중심 학습</h3>
-        <p>서비스별 핵심 개념보다 `선택 기준`을 먼저 정리한다.</p>
+        <h3>처음부터 학습</h3>
+        <p>서비스 개념과 선택 기준을 차례대로 쌓는다.</p>
       </article>
       <article class="feature-card">
-        <h3>시험형 사고 훈련</h3>
-        <p>고가용성, 비용 최적화, 보안, 운영 단순성 요구를 문제 문장에서 읽는 법을 익힌다.</p>
+        <h3>빠른 복습</h3>
+        <p>비교표, 패턴, 치트시트 중심으로 오답 제거력을 올린다.</p>
       </article>
       <article class="feature-card">
-        <h3>비교와 함정 정리</h3>
-        <p>`Amazon S3 vs Amazon EBS vs Amazon EFS`, `Application Load Balancer vs Network Load Balancer`처럼 헷갈리는 선택지를 빠르게 구분한다.</p>
-      </article>
-      <article class="feature-card">
-        <h3>시험 직전 복습 구조</h3>
-        <p>비교표, 치트시트, 시험 전략, 모의고사로 바로 넘어갈 수 있게 구성했다.</p>
+        <h3>시험 모드</h3>
+        <p>치트시트 복습 후 모의고사로 바로 넘어간다.</p>
       </article>
     </div>
   </section>
 
   <section class="dashboard-section">
-    <h2>서비스 바로 찾기</h2>
-    <div class="quick-jump-grid">
-      <a class="jump-card" href="keyword_index.md">키워드 인덱스 전체 보기</a>
-      <a class="jump-card" href="10_service_comparisons.md#cmp-storage">Amazon S3 / Amazon EBS / Amazon EFS</a>
-      <a class="jump-card" href="10_service_comparisons.md#cmp-load-balancer">Application Load Balancer / Network Load Balancer</a>
-      <a class="jump-card" href="10_service_comparisons.md#cmp-messaging">Amazon SQS / Amazon SNS / Amazon EventBridge</a>
-      <a class="jump-card" href="10_service_comparisons.md#cmp-rds-ddb">Amazon RDS / Amazon DynamoDB</a>
-      <a class="jump-card" href="10_service_comparisons.md#cmp-observability">Amazon CloudWatch / AWS CloudTrail / AWS Config</a>
-    </div>
-  </section>
-
-  <section class="dashboard-section">
-    <h2>추천 학습 루트</h2>
-    <div class="path-grid">
-      <article class="path-card">
-        <p class="path-label">기초 학습</p>
-        <h3>처음 준비하는 학습자</h3>
-        <p>서비스별 핵심 개념과 선택 기준을 처음부터 쌓는 루트다.</p>
-        <ul>
-          <li><a href="01_identity_security.md">1장. Identity &amp; Security</a></li>
-          <li><a href="02_compute.md">2장. Compute</a></li>
-          <li><a href="03_storage.md">3장. Storage</a></li>
-          <li><a href="09_architecture_patterns.md">9장. Architecture Patterns</a></li>
-        </ul>
-      </article>
-      <article class="path-card">
-        <p class="path-label">오답 제거 훈련</p>
-        <h3>헷갈리는 서비스만 빠르게 정리</h3>
-        <p>비교표와 패턴 위주로 읽고 시험형 판단력을 끌어올리는 루트다.</p>
-        <ul>
-          <li><a href="10_service_comparisons.md">10장. Service Comparisons</a></li>
-          <li><a href="11_exam_patterns.md">11장. Exam Patterns</a></li>
-          <li><a href="12_final_cheatsheet.md">12장. Final Cheatsheet</a></li>
-        </ul>
-      </article>
-      <article class="path-card path-card-exam">
-        <p class="path-label">시험 모드</p>
-        <h3>시험 직전 빠른 복습</h3>
-        <p>치트시트로 복습하고 바로 모의고사로 넘어가는 실전형 루트다.</p>
-        <ul>
-          <li><a href="12_final_cheatsheet.md">시험 직전 치트시트</a></li>
-          <li><a href="exam-questions/exam_strategy.md">Exam Strategy</a></li>
-          <li><a href="exam-questions/practice_exam_1.md">Practice Exam 1</a></li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <section class="dashboard-section">
-    <h2>시험 직전 바로 가기</h2>
-    <div class="shortcut-grid">
-      <a class="shortcut-card" href="12_final_cheatsheet.md">
-        <strong>치트시트</strong>
-        <span>서비스 한 줄 요약, 아키텍처 단축 공식, 함정 포인트</span>
+    <h2>10초 안에 진입하기</h2>
+    <div class="priority-grid">
+      <a class="priority-card" href="01_identity_security.md">
+        <strong>기초 학습 시작</strong>
+        <span>1장부터 9장까지 순서대로 따라간다.</span>
       </a>
-      <a class="shortcut-card" href="11_exam_patterns.md">
-        <strong>Exam Patterns</strong>
-        <span>문제 키워드 해석, 출제 패턴, 오답 제거 기준</span>
+      <a class="priority-card" href="10_service_comparisons.md">
+        <strong>비교표로 빠른 복습</strong>
+        <span>헷갈리는 서비스만 바로 비교한다.</span>
       </a>
-      <a class="shortcut-card" href="exam-questions/exam_strategy.md">
-        <strong>Exam Strategy</strong>
-        <span>시험 키워드, 선택 전략, 마지막 암기 포인트</span>
+      <a class="priority-card priority-card-strong" href="exam-questions/practice_exam_1.md">
+        <strong>모의고사 시작</strong>
+        <span>정답은 접어 두고 문제부터 푸는 흐름으로 들어간다.</span>
       </a>
-      <a class="shortcut-card shortcut-card-strong" href="exam-questions/practice_exam_1.md">
-        <strong>Practice Exam</strong>
-        <span>실전형 40문항 세트로 바로 들어가기</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="dashboard-section">
-    <h2>자주 찾는 주제</h2>
-    <div class="topic-grid">
-      <a class="topic-link" href="03_storage.md">정적 웹사이트 호스팅과 글로벌 캐시</a>
-      <a class="topic-link" href="09_architecture_patterns.md">서버리스 아키텍처와 이벤트 기반 처리</a>
-      <a class="topic-link" href="10_service_comparisons.md">Amazon S3 vs Amazon EBS vs Amazon EFS</a>
-      <a class="topic-link" href="10_service_comparisons.md">Application Load Balancer vs Network Load Balancer</a>
-      <a class="topic-link" href="10_service_comparisons.md">Amazon RDS vs Amazon DynamoDB</a>
-      <a class="topic-link" href="10_service_comparisons.md">Amazon SQS vs Amazon SNS vs Amazon EventBridge</a>
-      <a class="topic-link" href="09_architecture_patterns.md">고가용성 웹 아키텍처 패턴</a>
-      <a class="topic-link" href="exam-questions/practice_exam_1.md">모의고사 전체 보기</a>
     </div>
   </section>
 
@@ -146,27 +75,54 @@
       <button class="search-chip" type="button" data-search-term="팬아웃">팬아웃</button>
       <button class="search-chip" type="button" data-search-term="이벤트 라우팅">이벤트 라우팅</button>
       <button class="search-chip" type="button" data-search-term="공유 파일 시스템">공유 파일 시스템</button>
-      <button class="search-chip" type="button" data-search-term="블록 스토리지">블록 스토리지</button>
       <button class="search-chip" type="button" data-search-term="초저지연 NoSQL">초저지연 NoSQL</button>
-      <button class="search-chip" type="button" data-search-term="고정 IP 로드 밸런서">고정 IP 로드 밸런서</button>
-      <button class="search-chip" type="button" data-search-term="경로 기반 라우팅">경로 기반 라우팅</button>
-      <button class="search-chip" type="button" data-search-term="서버리스 컨테이너">서버리스 컨테이너</button>
-      <button class="search-chip" type="button" data-search-term="장기 보관">장기 보관</button>
-      <button class="search-chip" type="button" data-search-term="VPC Endpoint">VPC Endpoint</button>
-      <button class="search-chip" type="button" data-search-term="Amazon Cognito">Amazon Cognito</button>
     </div>
     <p class="search-hint">
-      검색은 문제 문장 그대로보다 <code>요구사항 핵심어 + 서비스명</code> 조합으로 찾는 것이 빠르다.
+      모바일에서는 긴 문장을 찾기보다 <code>요구사항 핵심어 + 서비스명</code> 조합으로 검색하는 편이 빠르다.
     </p>
   </section>
 
   <section class="dashboard-section compact-section">
-    <h2>온라인 학습과 PDF 변환</h2>
-    <ul>
-      <li>공개 주소는 <code>https://iantoo2.github.io/certification-study/</code>다.</li>
-      <li>Markdown 구조는 <code>mdBook</code> 기준으로 정리되어 있다.</li>
-      <li>주요 패턴은 Mermaid 다이어그램으로 포함되어 있다.</li>
-      <li>책 본문 뒤에는 시험 전략 문서와 5개 Practice Exam이 이어진다.</li>
-    </ul>
+    <h2>보조 탐색</h2>
+    <details class="resource-toggle">
+      <summary>학습 루트와 자주 찾는 주제 펼치기</summary>
+      <div class="resource-toggle-body">
+        <div class="path-grid">
+          <article class="path-card">
+            <p class="path-label">기초 학습</p>
+            <h3>처음 준비하는 학습자</h3>
+            <ul>
+              <li><a href="01_identity_security.md">1장. Identity &amp; Security</a></li>
+              <li><a href="02_compute.md">2장. Compute</a></li>
+              <li><a href="03_storage.md">3장. Storage</a></li>
+              <li><a href="09_architecture_patterns.md">9장. Architecture Patterns</a></li>
+            </ul>
+          </article>
+          <article class="path-card">
+            <p class="path-label">오답 제거</p>
+            <h3>헷갈리는 서비스만 정리</h3>
+            <ul>
+              <li><a href="10_service_comparisons.md">10장. Service Comparisons</a></li>
+              <li><a href="11_exam_patterns.md">11장. Exam Patterns</a></li>
+              <li><a href="12_final_cheatsheet.md">12장. Final Cheatsheet</a></li>
+            </ul>
+          </article>
+        </div>
+        <div class="topic-grid">
+          <a class="topic-link" href="keyword_index.md">키워드 인덱스 전체 보기</a>
+          <a class="topic-link" href="10_service_comparisons.md#cmp-storage">Amazon S3 / Amazon EBS / Amazon EFS</a>
+          <a class="topic-link" href="10_service_comparisons.md#cmp-load-balancer">Application Load Balancer / Network Load Balancer</a>
+          <a class="topic-link" href="10_service_comparisons.md#cmp-messaging">Amazon SQS / Amazon SNS / Amazon EventBridge</a>
+          <a class="topic-link" href="09_architecture_patterns.md#pattern-ha-web">고가용성 웹 아키텍처 패턴</a>
+          <a class="topic-link" href="exam-questions/practice_exam_1.md">모의고사 전체 보기</a>
+        </div>
+        <ul>
+          <li>공개 주소는 <code>https://iantoo2.github.io/certification-study/</code>다.</li>
+          <li>Markdown 구조는 <code>mdBook</code> 기준으로 정리되어 있다.</li>
+          <li>주요 패턴은 Mermaid 다이어그램으로 포함되어 있다.</li>
+          <li>책 본문 뒤에는 시험 전략 문서와 5개 Practice Exam이 이어진다.</li>
+        </ul>
+      </div>
+    </details>
   </section>
 </div>
