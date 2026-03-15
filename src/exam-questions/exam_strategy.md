@@ -2,6 +2,15 @@
 
 이 문서는 문제 풀이 속도와 정답률을 높이기 위한 빠른 전략 정리다. 시험에서 중요한 것은 서비스 기능 나열보다 요구사항을 읽고 가장 적절한 선택지를 고르는 능력이다.
 
+<div class="exam-callout">
+  <p class="exam-badge">시험 직전 복습</p>
+  <p><strong>Exam Strategy</strong>는 모의고사에 들어가기 전에 한 번 훑고 들어가는 압축 정리 페이지다. 먼저 핵심 키워드와 함정을 정리한 뒤 Practice Exam으로 넘어가는 흐름을 권장한다.</p>
+  <div class="exam-nav">
+    <a href="../12_final_cheatsheet.md">치트시트로 빠르게 복습</a>
+    <a href="practice_exam_1.md">Practice Exam 1 시작</a>
+  </div>
+</div>
+
 ## 1. 자주 나오는 AWS 시험 키워드
 
 - `least operational overhead`: 관리형 서비스, 서버리스, 자동화 우선

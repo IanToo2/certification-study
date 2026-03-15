@@ -2,6 +2,16 @@
 
 총 40문항으로 구성된 AWS SAA-C03 스타일 연습문제다. 실제 시험처럼 요구사항 우선순위를 해석해 정답을 선택하는 연습에 초점을 맞췄다.
 
+<div class="exam-callout">
+  <p class="exam-badge">시험 모드</p>
+  <p><strong>Practice Exam 5</strong>는 최종 점검용 실전 세트다. 점검 후에는 치트시트와 비교표로 약한 영역만 다시 복습하는 흐름을 권장한다.</p>
+  <div class="exam-nav">
+    <a href="exam_strategy.md">시험 전략 먼저 보기</a>
+    <a href="../12_final_cheatsheet.md">치트시트로 복습하기</a>
+    <a href="practice_exam_1.md">Practice Exam 1로 다시 보기</a>
+  </div>
+</div>
+
 ## 1
 
 한 회사는 루트 계정 사용을 최소화하고 싶다. 일상적인 운영 작업을 위한 가장 적절한 접근은?

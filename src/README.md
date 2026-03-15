@@ -2,97 +2,158 @@
 
 `AWS Solutions Architect Associate(SAA-C03)` 합격을 목표로 한 한국어 실전형 학습서다. 서비스 정의 암기보다 `어떤 요구사항에서 어떤 서비스를 선택해야 하는가`에 집중해, 실제 시험의 아키텍처 의사결정 문제를 빠르게 푸는 감각을 만드는 데 목적이 있다.
 
-## 이 책으로 얻는 것
+<div class="home-dashboard">
+  <section class="hero-panel">
+    <p class="hero-kicker">AWS SAA-C03 Certification</p>
+    <p class="hero-summary">
+      이 사이트는 문서를 순서대로 읽는 곳이 아니라, 시험에서 자주 나오는 요구사항을 빠르게
+      분류하고 정답 서비스를 고르는 감각을 훈련하는 곳이다.
+    </p>
+    <div class="hero-actions">
+      <a class="cta-card cta-primary" href="01_identity_security.md">
+        <strong>처음부터 학습</strong>
+        <span>1장부터 9장까지 개념, 선택 기준, 아키텍처 패턴을 순서대로 학습</span>
+      </a>
+      <a class="cta-card" href="10_service_comparisons.md">
+        <strong>비교표로 빠르게 복습</strong>
+        <span>헷갈리는 서비스 차이를 먼저 보고 오답 제거력을 높이기</span>
+      </a>
+      <a class="cta-card cta-emphasis" href="exam-questions/practice_exam_1.md">
+        <strong>지금 바로 모의고사</strong>
+        <span>Practice Exam 1부터 실전 모드로 진입하고 해설로 약점 확인</span>
+      </a>
+    </div>
+    <div class="hero-tools">
+      <button class="search-trigger" type="button" data-open-search="true">검색창 열기</button>
+      <a class="secondary-link" href="12_final_cheatsheet.md">시험 직전 치트시트</a>
+      <a class="secondary-link" href="exam-questions/exam_strategy.md">시험 전략 보기</a>
+    </div>
+  </section>
 
-- 서비스별 핵심 개념보다 `선택 기준`을 먼저 정리한다.
-- 고가용성, 비용 최적화, 보안, 운영 단순성 요구를 문제 문장에서 읽는 법을 익힌다.
-- `Amazon S3 vs Amazon EBS vs Amazon EFS`, `Application Load Balancer vs Network Load Balancer`처럼 헷갈리는 비교를 정리한다.
-- 시험 직전에는 비교표, 치트시트, 모의고사만 빠르게 훑을 수 있게 구성했다.
+  <section class="dashboard-section">
+    <h2>이 책으로 얻는 것</h2>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <h3>선택 기준 중심 학습</h3>
+        <p>서비스별 핵심 개념보다 `선택 기준`을 먼저 정리한다.</p>
+      </article>
+      <article class="feature-card">
+        <h3>시험형 사고 훈련</h3>
+        <p>고가용성, 비용 최적화, 보안, 운영 단순성 요구를 문제 문장에서 읽는 법을 익힌다.</p>
+      </article>
+      <article class="feature-card">
+        <h3>비교와 함정 정리</h3>
+        <p>`Amazon S3 vs Amazon EBS vs Amazon EFS`, `Application Load Balancer vs Network Load Balancer`처럼 헷갈리는 선택지를 빠르게 구분한다.</p>
+      </article>
+      <article class="feature-card">
+        <h3>시험 직전 복습 구조</h3>
+        <p>비교표, 치트시트, 시험 전략, 모의고사로 바로 넘어갈 수 있게 구성했다.</p>
+      </article>
+    </div>
+  </section>
 
-## 누구에게 적합한가
+  <section class="dashboard-section">
+    <h2>추천 학습 루트</h2>
+    <div class="path-grid">
+      <article class="path-card">
+        <p class="path-label">기초 학습</p>
+        <h3>처음 준비하는 학습자</h3>
+        <p>서비스별 핵심 개념과 선택 기준을 처음부터 쌓는 루트다.</p>
+        <ul>
+          <li><a href="01_identity_security.md">1장. Identity &amp; Security</a></li>
+          <li><a href="02_compute.md">2장. Compute</a></li>
+          <li><a href="03_storage.md">3장. Storage</a></li>
+          <li><a href="09_architecture_patterns.md">9장. Architecture Patterns</a></li>
+        </ul>
+      </article>
+      <article class="path-card">
+        <p class="path-label">오답 제거 훈련</p>
+        <h3>헷갈리는 서비스만 빠르게 정리</h3>
+        <p>비교표와 패턴 위주로 읽고 시험형 판단력을 끌어올리는 루트다.</p>
+        <ul>
+          <li><a href="10_service_comparisons.md">10장. Service Comparisons</a></li>
+          <li><a href="11_exam_patterns.md">11장. Exam Patterns</a></li>
+          <li><a href="12_final_cheatsheet.md">12장. Final Cheatsheet</a></li>
+        </ul>
+      </article>
+      <article class="path-card path-card-exam">
+        <p class="path-label">시험 모드</p>
+        <h3>시험 직전 빠른 복습</h3>
+        <p>치트시트로 복습하고 바로 모의고사로 넘어가는 실전형 루트다.</p>
+        <ul>
+          <li><a href="12_final_cheatsheet.md">시험 직전 치트시트</a></li>
+          <li><a href="exam-questions/exam_strategy.md">Exam Strategy</a></li>
+          <li><a href="exam-questions/practice_exam_1.md">Practice Exam 1</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
 
-- AWS SAA-C03를 처음 준비하는 학습자
-- 한 번 공부했지만 서비스 선택 기준이 아직 헷갈리는 학습자
-- 시험 직전에 빠르게 복습하고 오답 포인트만 정리하려는 학습자
+  <section class="dashboard-section">
+    <h2>시험 직전 바로 가기</h2>
+    <div class="shortcut-grid">
+      <a class="shortcut-card" href="12_final_cheatsheet.md">
+        <strong>치트시트</strong>
+        <span>서비스 한 줄 요약, 아키텍처 단축 공식, 함정 포인트</span>
+      </a>
+      <a class="shortcut-card" href="11_exam_patterns.md">
+        <strong>Exam Patterns</strong>
+        <span>문제 키워드 해석, 출제 패턴, 오답 제거 기준</span>
+      </a>
+      <a class="shortcut-card" href="exam-questions/exam_strategy.md">
+        <strong>Exam Strategy</strong>
+        <span>시험 키워드, 선택 전략, 마지막 암기 포인트</span>
+      </a>
+      <a class="shortcut-card shortcut-card-strong" href="exam-questions/practice_exam_1.md">
+        <strong>Practice Exam</strong>
+        <span>실전형 40문항 세트로 바로 들어가기</span>
+      </a>
+    </div>
+  </section>
 
-## 바로 시작하기
+  <section class="dashboard-section">
+    <h2>자주 찾는 주제</h2>
+    <div class="topic-grid">
+      <a class="topic-link" href="03_storage.md">정적 웹사이트 호스팅과 글로벌 캐시</a>
+      <a class="topic-link" href="09_architecture_patterns.md">서버리스 아키텍처와 이벤트 기반 처리</a>
+      <a class="topic-link" href="10_service_comparisons.md">Amazon S3 vs Amazon EBS vs Amazon EFS</a>
+      <a class="topic-link" href="10_service_comparisons.md">Application Load Balancer vs Network Load Balancer</a>
+      <a class="topic-link" href="10_service_comparisons.md">Amazon RDS vs Amazon DynamoDB</a>
+      <a class="topic-link" href="10_service_comparisons.md">Amazon SQS vs Amazon SNS vs Amazon EventBridge</a>
+      <a class="topic-link" href="09_architecture_patterns.md">고가용성 웹 아키텍처 패턴</a>
+      <a class="topic-link" href="exam-questions/practice_exam_1.md">모의고사 전체 보기</a>
+    </div>
+  </section>
 
-- [처음부터 학습 시작](01_identity_security.md)
-- [아키텍처 패턴부터 보기](09_architecture_patterns.md)
-- [헷갈리는 서비스 비교표 보기](10_service_comparisons.md)
-- [시험 직전 치트시트 보기](12_final_cheatsheet.md)
-- [시험 전략 보기](exam-questions/exam_strategy.md)
-- [Practice Exam 1 바로 풀기](exam-questions/practice_exam_1.md)
+  <section class="dashboard-section">
+    <h2>빠른 검색 키워드</h2>
+    <div class="search-chip-list">
+      <span class="search-chip">정적 웹사이트</span>
+      <span class="search-chip">비동기 메시지 처리</span>
+      <span class="search-chip">팬아웃</span>
+      <span class="search-chip">이벤트 라우팅</span>
+      <span class="search-chip">공유 파일 시스템</span>
+      <span class="search-chip">블록 스토리지</span>
+      <span class="search-chip">초저지연 NoSQL</span>
+      <span class="search-chip">고정 IP 로드 밸런서</span>
+      <span class="search-chip">경로 기반 라우팅</span>
+      <span class="search-chip">서버리스 컨테이너</span>
+      <span class="search-chip">장기 보관</span>
+      <span class="search-chip">VPC Endpoint</span>
+      <span class="search-chip">Amazon Cognito</span>
+    </div>
+    <p class="search-hint">
+      검색은 문제 문장 그대로보다 <code>요구사항 핵심어 + 서비스명</code> 조합으로 찾는 것이 빠르다.
+    </p>
+  </section>
 
-## 추천 학습 루트
-
-### 처음 준비하는 학습자
-
-- [1장. Identity & Security](01_identity_security.md)
-- [2장. Compute](02_compute.md)
-- [3장. Storage](03_storage.md)
-- [4장. Database](04_database.md)
-- [5장. Networking](05_networking.md)
-- [6장. Integration](06_integration.md)
-- [7장. Monitoring](07_monitoring.md)
-- [8장. Cost Optimization](08_cost_optimization.md)
-- [9장. Architecture Patterns](09_architecture_patterns.md)
-
-### 헷갈리는 서비스만 빠르게 정리하려는 학습자
-
-- [10장. Service Comparisons](10_service_comparisons.md)
-- [11장. Exam Patterns](11_exam_patterns.md)
-- [12장. Final Cheatsheet](12_final_cheatsheet.md)
-- [Exam Strategy](exam-questions/exam_strategy.md)
-
-### 시험 직전 빠른 복습
-
-- [12장. Final Cheatsheet](12_final_cheatsheet.md)
-- [11장. Exam Patterns](11_exam_patterns.md)
-- [10장. Service Comparisons](10_service_comparisons.md)
-- [Practice Exam 1](exam-questions/practice_exam_1.md)
-- [Practice Exam 2](exam-questions/practice_exam_2.md)
-
-## 자주 찾는 주제
-
-- [정적 웹사이트 호스팅과 글로벌 캐시](03_storage.md)
-- [서버리스 아키텍처와 이벤트 기반 처리](09_architecture_patterns.md)
-- [Amazon S3 vs Amazon EBS vs Amazon EFS](10_service_comparisons.md)
-- [Application Load Balancer vs Network Load Balancer](10_service_comparisons.md)
-- [Amazon RDS vs Amazon DynamoDB](10_service_comparisons.md)
-- [Amazon SQS vs Amazon SNS vs Amazon EventBridge](10_service_comparisons.md)
-- [고가용성 웹 아키텍처 패턴](09_architecture_patterns.md)
-- [모의고사 전체 보기](exam-questions/practice_exam_1.md)
-
-## 빠른 검색 키워드
-
-- 정적 웹사이트, 정적 사이트 호스팅, 글로벌 엣지 캐시
-- 비동기 메시지 처리, 메시지 큐, decouple application components
-- 팬아웃, pub/sub, 이벤트 브로드캐스트
-- 규칙 기반 이벤트 라우팅, 이벤트 버스
-- 공유 파일 시스템, NFS, 다중 EC2 파일 공유
-- 블록 스토리지, 서버 디스크, EBS 볼륨
-- 초저지연 NoSQL, 키-값 데이터베이스, 세션 저장소
-- 읽기 확장, Read Replica, 캐시 계층
-- 고정 IP 로드밸런서, L4 로드 밸런서
-- 경로 기반 라우팅, 호스트 기반 라우팅, L7 로드 밸런서
-- 서버리스 컨테이너, 컨테이너 서버 관리 제거
-- 장기 보관, Glacier, S3 Lifecycle
-- 프라이빗 AWS 서비스 접근, VPC Endpoint
-- 최종 사용자 인증, Amazon Cognito
-
-## 이 책에서 반복해서 보는 기준
-
-- 아키텍처 의사결정 근거
-- 고가용성 패턴
-- 비용 최적화 패턴
-- 서비스 간 비교와 선택 기준
-- 시험에서 자주 나오는 함정 포인트
-
-## 온라인 학습과 PDF 변환
-
-- 공개 주소는 `https://iantoo2.github.io/certification-study/`다.
-- Markdown 구조는 `mdBook` 기준으로 정리되어 있다.
-- 주요 패턴은 Mermaid 다이어그램으로 포함되어 있다.
-- 표와 코드 블록은 PDF로 내보내기 쉬운 형식을 우선 사용한다.
-- 책 본문 뒤에는 시험 전략 문서와 5개 Practice Exam이 이어진다.
+  <section class="dashboard-section compact-section">
+    <h2>온라인 학습과 PDF 변환</h2>
+    <ul>
+      <li>공개 주소는 <code>https://iantoo2.github.io/certification-study/</code>다.</li>
+      <li>Markdown 구조는 <code>mdBook</code> 기준으로 정리되어 있다.</li>
+      <li>주요 패턴은 Mermaid 다이어그램으로 포함되어 있다.</li>
+      <li>책 본문 뒤에는 시험 전략 문서와 5개 Practice Exam이 이어진다.</li>
+    </ul>
+  </section>
+</div>

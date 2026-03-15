@@ -2,6 +2,16 @@
 
 총 40문항으로 구성된 AWS SAA-C03 스타일 연습문제다. 각 문항은 서비스 정의 암기보다 아키텍처 선택 기준을 묻도록 구성했다.
 
+<div class="exam-callout">
+  <p class="exam-badge">시험 모드</p>
+  <p><strong>Practice Exam 3</strong>는 중간 점검용 실전 세트다. 점수보다 어떤 유형에서 반복적으로 흔들리는지 확인하는 데 초점을 둔다.</p>
+  <div class="exam-nav">
+    <a href="exam_strategy.md">시험 전략 먼저 보기</a>
+    <a href="../12_final_cheatsheet.md">치트시트로 복습하기</a>
+    <a href="practice_exam_4.md">다음 모의고사</a>
+  </div>
+</div>
+
 ## 1
 
 한 회사는 운영자가 여러 계정에 로그인할 때 중앙 인증 체계를 사용하고 싶다. 개별 계정마다 사용자 계정을 만들고 싶지 않다. 가장 적절한 선택은?

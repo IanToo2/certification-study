@@ -2,6 +2,15 @@
 
 시험 직전에는 모든 내용을 다시 읽기보다 선택 기준을 압축해서 보는 편이 효율적이다. 이 장은 마지막 1회독용 핵심 요약본이다.
 
+<div class="exam-callout">
+  <p class="exam-badge">시험 직전 복습</p>
+  <p><strong>Final Cheatsheet</strong>를 먼저 보고, 바로 <strong>Exam Strategy</strong>와 <strong>Practice Exam</strong>으로 넘어가면 시험 모드 전환이 가장 빠르다.</p>
+  <div class="exam-nav">
+    <a href="exam-questions/exam_strategy.md">Exam Strategy 보기</a>
+    <a href="exam-questions/practice_exam_1.md">Practice Exam 1 시작</a>
+  </div>
+</div>
+
 ## 1. 서비스 한 줄 요약
 
 ### 보안

@@ -2,6 +2,16 @@
 
 총 40문항으로 구성된 AWS SAA-C03 스타일 연습문제다. 서비스 이름보다 요구사항 해석과 오답 제거에 집중해 풀어야 한다.
 
+<div class="exam-callout">
+  <p class="exam-badge">시험 모드</p>
+  <p><strong>Practice Exam 4</strong>는 시험 직전 감각 점검용 실전 세트다. 모르는 문제는 표시만 하고 끝까지 푼 뒤 한 번에 해설을 확인하는 방식이 좋다.</p>
+  <div class="exam-nav">
+    <a href="exam_strategy.md">시험 전략 먼저 보기</a>
+    <a href="../12_final_cheatsheet.md">치트시트로 복습하기</a>
+    <a href="practice_exam_5.md">다음 모의고사</a>
+  </div>
+</div>
+
 ## 1
 
 회사는 프로덕션 리소스 접근 권한을 업무별로 세분화하려고 한다. 개발자는 로그 조회만 가능하고, 운영자는 배포까지 가능해야 한다. 가장 적절한 접근은?

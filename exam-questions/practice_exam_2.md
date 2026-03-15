@@ -2,6 +2,16 @@
 
 총 40문항으로 구성된 AWS SAA-C03 스타일 연습문제다. 각 문항은 실무형 시나리오와 시험 함정을 함께 반영했다.
 
+<div class="exam-callout">
+  <p class="exam-badge">시험 모드</p>
+  <p><strong>Practice Exam 2</strong>는 두 번째 실전 세트다. 풀이 전에는 전략만 확인하고, 풀이 후에는 해설을 통해 서비스 선택 근거를 정리한다.</p>
+  <div class="exam-nav">
+    <a href="exam_strategy.md">시험 전략 먼저 보기</a>
+    <a href="../12_final_cheatsheet.md">치트시트로 복습하기</a>
+    <a href="practice_exam_3.md">다음 모의고사</a>
+  </div>
+</div>
+
 ## 1
 
 한 회사는 개발자들이 프로덕션 계정에 직접 관리자 권한으로 접속하지 못하게 하려 한다. 대신 필요 시 임시로 권한을 위임받아 작업하게 해야 한다. 가장 적절한 접근 방식은?

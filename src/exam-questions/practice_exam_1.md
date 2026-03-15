@@ -2,6 +2,16 @@
 
 총 40문항으로 구성된 AWS SAA-C03 스타일 연습문제다. 각 문항은 아키텍처 의사결정 관점으로 설계했다.
 
+<div class="exam-callout">
+  <p class="exam-badge">시험 모드</p>
+  <p><strong>Practice Exam 1</strong>은 첫 번째 실전 세트다. 먼저 제한 시간을 두고 풀고, 이후 해설로 오답 이유를 확인하는 흐름을 권장한다.</p>
+  <div class="exam-nav">
+    <a href="exam_strategy.md">시험 전략 먼저 보기</a>
+    <a href="../12_final_cheatsheet.md">치트시트로 복습하기</a>
+    <a href="practice_exam_2.md">다음 모의고사</a>
+  </div>
+</div>
+
 ## 1
 
 한 회사는 여러 `EC2` 인스턴스에서 공통 스크립트를 실행해 `Amazon S3` 버킷에 로그를 업로드해야 한다. 보안 팀은 장기 액세스 키를 서버에 저장하는 것을 금지했다.
